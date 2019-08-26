@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: maven
-        image: ${CICD_IMAGE}:10
+        image: example-greenhouse:10
         envFrom:
         - secretRef:
             name: sample

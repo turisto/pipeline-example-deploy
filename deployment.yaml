@@ -37,3 +37,19 @@ spec:
             name: sample
         ports:
         - containerPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+  name: try2
+  namespace: falco
+  selfLink: /apis/extensions/v1beta1/namespaces/falco/ingresses/try2
+spec:
+  rules:
+  - host: try2.rancher.ardfactory.com
+    http:
+      paths:
+      - backend:
+          serviceName: try2
+          servicePort: 8080

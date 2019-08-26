@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: maven
-        image: example-greenhouse:10
+        image: container.rancher.ardfactory.com/example-greenhouse:10
         envFrom:
         - secretRef:
             name: sample

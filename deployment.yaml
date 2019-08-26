@@ -51,5 +51,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: try2
+          serviceName: greenhouse-service
           servicePort: 8080
